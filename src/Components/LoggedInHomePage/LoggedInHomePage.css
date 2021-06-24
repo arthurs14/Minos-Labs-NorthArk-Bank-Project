@@ -1,0 +1,137 @@
+/* Styling for LIHPHeader.js */
+.Header-Main-Box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+    background-color: #75b3c6;
+    box-shadow: #383232 0 2px 2px;
+    /* border: solid black 1px; */
+}
+
+.Title-Box {
+    margin-right: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #854901;
+}
+
+.User-Name-Box {
+    margin-right: 48%;
+    margin-top: 1.1%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9b6729;
+}
+
+.Sign-Out-Button-Box {
+    margin-top: 2.5%;
+}
+
+.Sign-Out-Button {
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #854901;
+    color: white;
+}
+
+/* Styling for LIHPReportsBox.js */
+.Reports-Box-Main-Box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    /* border: solid black 1px; */
+}
+
+.Reports-Box-Button {
+    margin: 1%;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #854901;
+    color: white;
+}
+
+/* Styling for TransactionsLog.js */
+.Trans-Log-Main-Box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+    box-shadow: #383232 0 2px 2px;
+    /* border: solid black 1px; */
+}
+
+.Trans-Log-Title {
+    margin-left: -90%;
+    background-color: #a3a3a3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Trans-Log-Trans-Titles {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    border-bottom: dotted black 1px;
+}
+
+.Trans-Log-Trans-Date-Title {
+    margin-right: 9.8%;
+}
+
+.Trans-Log-Trans-Descr-Title {
+    margin-right: 69.5%;
+}
+
+.Trans-Log-Transactions {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
+
+.Trans-Log-Date-Transaction {
+    margin-right: 7.5%;
+}
+
+.Trans-Log-Descr-Transaction {
+    margin-right: 68%;
+}
+
+/* Styling for LIHPFooter.js */
+.Footer-Main-Box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+    background-color: #75b3c6;
+    box-shadow: #383232 0 0 2px 2px;
+}
+
+.Footer-Text {
+    width: 30%;
+    text-align: left;
+    margin-right: 55%;
+}
+
+.Footer-Contact-Us {
+    font-size: 25px;
+    border-radius: 10px;
+    /* border: none; */
+    background-color: #75b3c6;
+}
