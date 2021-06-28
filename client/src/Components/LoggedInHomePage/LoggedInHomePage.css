@@ -6,7 +6,7 @@
     padding-bottom: 1%;
     padding-right: 2%;
     padding-left: 2%;
-    width: 100%;
+    width: 96%;
     background-color: #75b3c6;
     box-shadow: #383232 0 2px 2px;
     /* border: solid black 1px; */
@@ -47,6 +47,12 @@
     margin-bottom: 1%;
     width: 100%;
     /* border: solid black 1px; */
+}
+
+/* styling for Link wrappers in LIHPReportsBox */
+.Reports-Box-Main-Box a{
+    display: contents;
+    text-decoration: none;
 }
 
 .Reports-Box-Button {
@@ -118,7 +124,7 @@
     padding-bottom: 1%;
     padding-right: 2%;
     padding-left: 2%;
-    width: 100%;
+    width: 96%;
     background-color: #75b3c6;
     box-shadow: #383232 0 0 2px 2px;
 }
