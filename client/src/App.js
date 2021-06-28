@@ -1,12 +1,20 @@
 import React from 'react';
 import LoggedInHomePage from './Components/LoggedInHomePage/LoggedInHomePage';
-import { Route } from 'react-router-dom';
+import RevenueMain from './Components/RevenueReport/RevenueMain';
+import {BrowserRouter as Router, Route,Redirect, Switch} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Route exact path="/LoggedInHomePage" component={LoggedInHomePage}/>
+      {/* added a router here -Darron */}
+      <Router>
+        <Switch>
+          <Route exact path= '/' component={LoggedInHomePage}/>
+          <Route exact path= '/RevenueReport' component={RevenueMain}/>
+          <Redirect to='/'/>
+        </Switch>
+      </Router>
     </div>
   );
 }

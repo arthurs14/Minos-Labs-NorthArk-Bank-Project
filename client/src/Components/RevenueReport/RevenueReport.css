@@ -1,0 +1,112 @@
+.App{overflow: hidden;}
+
+.RevenueMain-container{
+    width: 100vw;   
+}
+
+.Revenue-container{
+    height: 100%;
+    padding: 20px;
+    width: 90%;
+}
+.Revenue-top-prev{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Rev-prev-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Rev-prev-top-border{
+    width: 14vw;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: lightgray;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 1px 2px 3px 0px grey;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rev-prev-container{
+    padding: 20px;
+    padding-top: 5px;
+    width: 14vw;
+    background: white;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 2px 3px 0px grey;
+}
+.Rev-prev-container > h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.Rev-prev-container > small{
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+.Rev-prev-container > span{
+    padding: 5px;
+    background: lightgray;
+    margin-top: 5px;
+}
+.Rev-Home-Route{
+    position: absolute;
+    left: 3vw;
+    top: 200px;
+    width: 80px;
+    padding: 15px;
+    background: #854901;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px grey;
+    
+    
+}
+.Rev-Home-Route a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.Rev-Home-Route img{
+    width: 25px;
+}
+.Rev-options-panel{
+    height: 95vh;
+    position: relative;
+    width: 600px;
+    background: lightgray;
+    right: 0vw;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid gray;
+    border-right: none;
+    transform: translateX(120%);
+    transition: .3s;
+}
+.Rev-options-panel:hover{
+    cursor: pointer;
+}
+.panel-active{
+    height: 95vh;
+    position: relative;
+    width: 600px;
+    background: lightgray;
+    right: 0vw;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid gray;
+    border-right: none;
+    transform: translateX(50%);
+    transition: .3s;
+}
+.panel-active:hover{
+    cursor: pointer;
+}
+.Rev-content-panel-container{
+display: flex;
+}
+.Revenue-content{
+    width: 200%;
+}
