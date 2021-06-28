@@ -6,35 +6,40 @@
     padding-bottom: 1%;
     padding-right: 2%;
     padding-left: 2%;
-    width: 96%;
+    /* justify-content: space-around; */
+    width: 100%;
     background-color: #75b3c6;
     box-shadow: #383232 0 2px 2px;
     /* border: solid black 1px; */
 }
 
 .Title-Box {
-    margin-right: 2%;
+    margin-right: 65%;
+    margin-left: 1%;
     font-size: 30px;
     font-weight: bold;
-    color: #854901;
+    /* color: #854901; */
+    color: black;
 }
 
-.User-Name-Box {
-    margin-right: 48%;
-    margin-top: 1.1%;
+.User-Name-Text {
+    text-align: left;
+    margin-top: -3%;
     font-size: 20px;
     font-weight: bold;
-    color: #9b6729;
+    /* color: #854901; */
+    color: black;
 }
 
 .Sign-Out-Button-Box {
-    margin-top: 2.5%;
+    margin-top: 3%;
 }
 
 .Sign-Out-Button {
     font-size: 15px;
     border-radius: 10px;
-    background-color: #854901;
+    /* background-color: #854901; */
+    background-color: black;
     color: white;
 }
 
@@ -124,20 +129,56 @@
     padding-bottom: 1%;
     padding-right: 2%;
     padding-left: 2%;
-    width: 96%;
+    justify-content: space-around;
+    width: 100%;
     background-color: #75b3c6;
     box-shadow: #383232 0 0 2px 2px;
 }
 
 .Footer-Text {
     width: 30%;
-    text-align: left;
-    margin-right: 55%;
+    text-align: center;
 }
 
-.Footer-Contact-Us {
-    font-size: 25px;
-    border-radius: 10px;
-    /* border: none; */
-    background-color: #75b3c6;
+.Customer-Service-Title {
+    font-weight: bold;
 }
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-top: 6%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: black;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: black;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: black;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: black;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: black;
+    color: white;
+  }
