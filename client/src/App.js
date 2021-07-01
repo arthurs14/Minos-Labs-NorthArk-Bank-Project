@@ -10,7 +10,7 @@ function App() {
       {/* added a router here -Darron */}
       <Router>
         <Switch>
-          <Route exact path= '/' component={LoggedInHomePage}/>
+          <Route exact path= '/LoggedInHomePage' component={LoggedInHomePage}/>
           <Route exact path= '/RevenueReport' component={RevenueMain}/>
           <Redirect to='/'/>
         </Switch>
