@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UserLogin = () => {
   return (
-    <form>
+    <form className="login-form">
       <h1>NorthArk Bank</h1>
       <h3>Sign In</h3>
 
