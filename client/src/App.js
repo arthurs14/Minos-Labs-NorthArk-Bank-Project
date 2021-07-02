@@ -3,14 +3,14 @@ import {
   BrowserRouter as Router, 
   Route, 
   Redirect, 
-  Switch
+  Switch,
 } from "react-router-dom";
 import './App.css';
 
-import LoggedInHomePage from './Components/LoggedInHomePage/LoggedInHomePage';
-import RevenueMain from './Components/RevenueReport/RevenueMain';
 import Login from './Components/Login/Login';
 import SignUp from './Components/Login/SignUp';
+import LoggedInHomePage from './Components/LoggedInHomePage/LoggedInHomePage';
+import RevenueMain from './Components/RevenueReport/RevenueMain';
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
         <Switch>
           <Route exact path='/' component={Login} />
           <Route exact path='/sign-up' component={SignUp} />
-          <Route exact path='/home-page' component={LoggedInHomePage}/>
-          <Route exact path='/RevenueReport' component={RevenueMain}/>
+          <Route exact path='/LoggedInHomePage' component={LoggedInHomePage} />
+          <Route exact path='/RevenueReport' component={RevenueMain} />
           <Redirect to='/'/>
         </Switch>
       </Router>
