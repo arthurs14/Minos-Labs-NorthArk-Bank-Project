@@ -1,6 +1,17 @@
+import { useHistory } from 'react-router-dom';
 import './LoggedInHomePage.css'
 
 function LIHPHeader() {
+
+    const useSignOut = () => {
+        let history = useHistory()
+        return () => {
+            history.push('/')
+        }
+    }
+
+    const signOut = useSignOut()
+
     return (
       <div className="Header-Main-Box">
           <div className="Title-Box">
@@ -8,7 +19,7 @@ function LIHPHeader() {
               <p className="User-Name-Text">Welcome to your account UserName!</p>
           </div>
           <div className="Sign-Out-Button-Box">
-              <button className="Sign-Out-Button">Sign Out</button>
+              <button className="Sign-Out-Button" onClick={signOut}>Sign Out</button>
           </div>
       </div>
     );
