@@ -8,10 +8,12 @@
     height: 100%;
     padding: 20px;
     width: 90%;
+    position: relative;
 }
 .Revenue-top-prev{
     display: flex;
     justify-content: space-evenly;
+    margin-left: 10vw;
 }
 
 .Rev-prev-box{
@@ -55,11 +57,10 @@
     margin-top: 5px;
 }
 .Rev-Home-Route{
-    position: absolute;
-    left: 3vw;
     top: 200px;
     width: 80px;
     padding: 15px;
+    margin-bottom: 10px;
     background: #854901;
     border-radius: 5px;
     box-shadow: 1px 1px 2px 1px grey;
@@ -75,31 +76,32 @@
     width: 25px;
 }
 .Rev-options-panel{
-    height: 95vh;
-    position: relative;
-    width: 600px;
-    background: lightgray;
+    height: 80vh;
+    position: absolute;
+    width: 500px;
+    background: whitesmoke;
     right: 0vw;
     border-radius: 5px 0px 0px 5px;
-    border: 2px solid gray;
+    border: 2px solid lightgray;
     border-right: none;
-    transform: translateX(120%);
+    transform: translateX(100%);
     transition: .3s;
+    overflow: hidden;
 }
-.Rev-options-panel:hover{
-    cursor: pointer;
-}
+
 .panel-active{
-    height: 95vh;
-    position: relative;
-    width: 600px;
-    background: lightgray;
+    height: 80vh;
+    position: absolute;
+    width: 500px;
+    background: white;
     right: 0vw;
     border-radius: 5px 0px 0px 5px;
     border: 2px solid gray;
     border-right: none;
-    transform: translateX(50%);
+    transform: translateX(25%);
     transition: .3s;
+    opacity: .95;
+    overflow: hidden;
 }
 .panel-active:hover{
     cursor: pointer;
@@ -108,5 +110,29 @@
 display: flex;
 }
 .Revenue-content{
-    width: 200%;
+    width: 100%;
+}
+.panel-arrow{
+    width: 40px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.panel-arrow:hover{
+    border: 2px solid #75b3c6;
+    cursor: pointer;
+}
+.panel-banner{
+    width: 100%;
+    height: 30px;
+    background: #854901;
+}
+.panel-view-options{
+    margin-left: 25%;
+    text-align: start;
+}
+.panel-view-options h2{
+    color: gray;
+    margin-left: 25%;
 }

@@ -1,13 +1,13 @@
 import {useState} from 'react'
-import RevenueData from './RevenueData'
+import RevenueData from '../RevenueReport/RevenueData'
 import listIcon from '../../Assets/SvgIcons/listIcon.svg'
 import graphIcon from '../../Assets/SvgIcons/graphIcon.svg'
 import barIcon from '../../Assets/SvgIcons/barIcon.svg'
 
 
-export default function RevenueLists(){
+export default function ExpenseLists(){
     const [rDataState, setRDataState] = useState(0);
-    const revData = ['Revenue List', 'Comparison Graph', 'Revenue Chart'  ]
+    const revData = ['Expense List', 'Comparison Graph', 'Expense Chart'  ]
     return(
         <div className='Rev-List-container'>
             <div className='Rev-sidebar'>
@@ -19,7 +19,7 @@ export default function RevenueLists(){
 
             <div className='Rev-data-container'>
                 <div className='Rev-data-top'><b>{revData[rDataState]}</b></div>
-                <RevenueData expense={false} show={rDataState}/>
+                <RevenueData expense={true} show={rDataState}/>
             </div>
 
         </div>

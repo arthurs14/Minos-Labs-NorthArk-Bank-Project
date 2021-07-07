@@ -3,7 +3,7 @@ import dash from '../../Assets/SvgIcons/dash.svg'
 import { useState } from 'react';
 
 
-export default function TransactionList(){
+export default function TransactionList(props){
     const currency = new Intl.NumberFormat('en-US' , {style: 'currency', currency: 'usd'})
     const [index, setIndex] = useState();
     //generated date
@@ -53,15 +53,25 @@ export default function TransactionList(){
         Amount: 112.34
         }]
     
+    const expense = props.expense
     //map dummy data
     const tran = transactions.map((t, indx)=>{
-    
+
         return(
             <div key={indx}>
-            {/* I'm trying to think of a better way to write this accordian toggle if any suggestions */}
+            {/* I'm trying to think of a better way to write this accordion toggle if any suggestions */}
+            {expense ?
+            
             <div onClick={()=> index !== indx ?  setIndex(indx): setIndex(null)} className='state1-container'>
-               <span className='state1MoreInfo'>{index === indx ? <img src={dash} alt='dash'/>: <img src={plus} alt='plus'/> }</span> <p>TRANSACTION AUTHORIZED <span className='state1Income'><b> + {currency.format(Number(t.Amount)) }</b></span> ON {t.AuthorizationDate} BY {t.AuthorizationName }</p>
+                <span className='state1MoreInfo'>{index === indx ? <img src={dash} alt='dash'/>: <img src={plus} alt='plus'/> }</span> <p>TRANSACTION AUTHORIZED 
+                <span className='state1Income'><b className='expenseNum'> - {currency.format(Number(t.Amount)) }</b></span> ON 
+                <span style={{textDecoration: 'underline', display: 'contents'}}> {t.AuthorizationDate}</span> BY {'User1' }</p>
             </div>
+            : <div onClick={()=> index !== indx ?  setIndex(indx): setIndex(null)} className='state1-container'>
+            <span className='state1MoreInfo'>{index === indx ? <img src={dash} alt='dash'/>: <img src={plus} alt='plus'/> }</span> <p>TRANSACTION AUTHORIZED 
+            <span className='state1Income'><b> + {currency.format(Number(t.Amount)) }</b></span> ON 
+            <span style={{textDecoration: 'underline', display: 'contents'}}> {t.AuthorizationDate}</span> BY {t.AuthorizationName }</p>
+        </div>}
             <div className={index === indx ?'state1-comments active': "state1-comments" }>This is a comment for more relevant information.</div>
             </div>
         )
