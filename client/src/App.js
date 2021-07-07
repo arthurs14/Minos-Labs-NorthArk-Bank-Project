@@ -11,17 +11,18 @@ import Login from './Components/Login/Login';
 import SignUp from './Components/Login/SignUp';
 import LoggedInHomePage from './Components/LoggedInHomePage/LoggedInHomePage';
 import RevenueMain from './Components/RevenueReport/RevenueMain';
+import ExpenseMain from './Components/ExpenseReports/ExpenseMain';
 
 function App() {
   return (
     <div className="App">
-      {/* added a router here -Darron */}
       <Router>
         <Switch>
           <Route exact path='/' component={Login} />
-          <Route exact path='/sign-up' component={SignUp} />
-          <Route exact path='/LoggedInHomePage' component={LoggedInHomePage} />
-          <Route exact path='/RevenueReport' component={RevenueMain} />
+          <Route path='/SignUp' component={SignUp} />
+          <Route path='/LoggedInHomePage' component={LoggedInHomePage} />
+          <Route path='/RevenueReport' component={RevenueMain} />
+          <Route path='/ExpenseReport' component={ExpenseMain}/>
           <Redirect to='/'/>
         </Switch>
       </Router>

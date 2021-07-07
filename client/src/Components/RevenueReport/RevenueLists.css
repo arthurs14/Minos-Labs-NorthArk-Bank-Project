@@ -74,6 +74,9 @@
 .state1MoreInfo{
     margin-left: 5%;
 }
+.expenseNum{
+    color: red !important;
+}
 .state1MoreInfo img{
     width: 40px;
     border-radius: 50%;
@@ -96,4 +99,19 @@
 .Rev-Graph-padding{
     padding: 40px;
     padding-top: 0;
+}
+
+.Rev-sidebar-print{
+    position: relative;
+    bottom: -35vh;
+    padding: 15px;
+    border: 2px solid #854901;
+    border-radius: 5px;
+    color: #854901;
+    background: white;
+}
+.Rev-sidebar-print:hover{
+    background: #854901 ;
+    color: white;
+    cursor: pointer;
 }

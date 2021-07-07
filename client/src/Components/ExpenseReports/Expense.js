@@ -1,7 +1,5 @@
-// import { useState } from 'react' ---to replace variables
 import {Link} from 'react-router-dom' 
-import RevenueLists from './RevenueLists'
-import RevenueOptions from './RevenueOptions'
+import ExpenseList from './ExpenseList'
 import moment from 'moment'
 import home from '../../Assets/SvgIcons/home.svg'
 import leftArrow from '../../Assets/SvgIcons/LeftArrow.svg'
@@ -9,12 +7,12 @@ import rightArrow from '../../Assets/SvgIcons/RightArrow.svg'
 import { useState } from 'react'
 
 
-export default function Revenue(){
+export default function Expense(){
 
     const [isOpen,setIsOpen] = useState(false)
     
     //place holder variables
-    const [yearlyIncome, setYearlyIncome] = useState(75000)
+    const [yearlyIncome, setYearlyIncome] = useState(32420)
     const [monthlyIncome, setMonthlyIncome] = useState(yearlyIncome/12)
     const [quarterlyIncome, setQuarterlyIncome] = useState(yearlyIncome/4)
     const [weeklyIncome, setWeeklyIncome] = useState(yearlyIncome/52)
@@ -26,15 +24,15 @@ export default function Revenue(){
                 <Link  to='/'><span><img src={home} alt='home'/></span>Home</Link>
             </div>
                         <div className='Revenue-top-prev'>
-                            <RevenuePrev week={weeklyIncome}/>
-                            <RevenuePrev month={monthlyIncome}/>
-                            <RevenuePrev quarter={quarterlyIncome}/>  
-                            <RevenuePrev year={yearlyIncome}/>
+                            <ExpensePrev week={weeklyIncome}/>
+                            <ExpensePrev month={monthlyIncome}/>
+                            <ExpensePrev quarter={quarterlyIncome}/>  
+                            <ExpensePrev year={yearlyIncome}/>
                         </div>
 
                     <div className='Rev-content-panel-container'>
                         <div className='Revenue-content'>
-                            <RevenueLists/>
+                            <ExpenseList/>
                         </div>
                     
                         <div  className={isOpen ? 'panel-active': 'Rev-options-panel' }>
@@ -46,7 +44,7 @@ export default function Revenue(){
                             
                             <div className='panel-view-options'>
                                 <h2>View Options</h2>
-                                <RevenueOptions/>
+                                {/* <RevenueOptions/> */}
                             </div>
 
 
@@ -58,7 +56,7 @@ export default function Revenue(){
 }
 
 
- function RevenuePrev(props){
+ function ExpensePrev(props){
     const week = props.week;
     const month = props.month;
     const quarter = props.quarter;
@@ -92,7 +90,7 @@ export default function Revenue(){
         {/* Rendered based on filled props */}
         {week != null ? 
             <div className='Rev-prev-box'>
-                <div className='Rev-prev-top-border'><b>Weekly Revenue:</b></div>
+                <div className='Rev-prev-top-border'><b>Weekly Expenses:</b></div>
                 <div className='Rev-prev-container'>
                     <small>{today.format("L")}</small> 
                     <h3>{currency.format(week)}</h3>
@@ -103,7 +101,7 @@ export default function Revenue(){
 
         {month != null ? 
             <div className='Rev-prev-box'>
-                <div className='Rev-prev-top-border'><b>Monthly Revenue:</b></div>
+                <div className='Rev-prev-top-border'><b>Monthly Expenses:</b></div>
                 <div className='Rev-prev-container'>
                     <small>{today.format("MMMM")}</small>  
                     <h3>{currency.format(month)}</h3>
@@ -114,7 +112,7 @@ export default function Revenue(){
 
         {quarter != null ? 
             <div className='Rev-prev-box'>
-                <div className='Rev-prev-top-border'><b>Quarterly Revenue:</b></div>
+                <div className='Rev-prev-top-border'><b>Quarterly Expenses:</b></div>
                 <div className='Rev-prev-container'>
                     <small>{today.format("Qo")}</small>  
                     <h3>{currency.format(quarter)}</h3>
@@ -125,7 +123,7 @@ export default function Revenue(){
 
         {year != null ? 
             <div className='Rev-prev-box'>
-                <div className='Rev-prev-top-border'><b>Annual Revenue:</b></div>
+                <div className='Rev-prev-top-border'><b>Annual Expenses:</b></div>
                 <div className='Rev-prev-container'> 
                     <small>{today.format("YYYY")}</small>
                     <h3>{currency.format(year)}</h3>
