@@ -4,9 +4,11 @@ NorthArk Investment Bank’s front office team (Client Facing roles that generat
 
 ## Installation
 
-For now we are in still in development so please clone the repo. If one of the collaborators please fork then clone:
+For now we are in still in development so please fork then clone the repo.
 1. cd (change directory) into client then run 'npm install' or 'yarn install' to install dependencies.
-2. Run 'npm start' or 'yarn start' to start development.
+2. Run 'npm start' or 'yarn start' to start development for the front end.
+3. cd back into root directory and cd into server and 'npm install' or 'yarn install' to install dependencies.
+4. Run 'npm start' or 'yarn start' to start development for the backend.
 
 ### Things to Note
 
