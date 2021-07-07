@@ -19,10 +19,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Login} />
-          <Route path='/SignUp' component={SignUp} />
-          <Route path='/LoggedInHomePage' component={LoggedInHomePage} />
-          <Route path='/RevenueReport' component={RevenueMain} />
-          <Route path='/ExpenseReport' component={ExpenseMain}/>
+          <Route path='/signup' component={SignUp} />
+          <Route path='/home' component={LoggedInHomePage} />
+          <Route path='/revenue-report' component={RevenueMain} />
+          <Route path='/expense-report' component={ExpenseMain}/>
           <Redirect to='/'/>
         </Switch>
       </Router>
