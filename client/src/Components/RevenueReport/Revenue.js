@@ -23,7 +23,7 @@ export default function Revenue(){
     return(
         <div className='Revenue-container'>
             <div className='Rev-Home-Route'>
-                <Link  to='/LoggedInHomePage'><span><img src={home} alt='home'/></span>Home</Link>
+                <Link  to='/home'><span><img src={home} alt='home'/></span>Home</Link>
             </div>
                         <div className='Revenue-top-prev'>
                             <RevenuePrev week={currency.format(Number(WeeklyIncome))}/>
