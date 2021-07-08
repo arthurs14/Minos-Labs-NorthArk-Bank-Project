@@ -4,7 +4,8 @@ const users = [
   {
     id: uuidv4(),
     user: "testuser1",
-    password: 123456,
+    password: "123456",
+    currentBalance: "5000.00",
     transactions: [
       {
         amount: "$3.13",
@@ -101,7 +102,8 @@ const users = [
   {
     id: uuidv4(),
     user: 'testuser2',
-    password: 135791,
+    password: "135791",
+    currentBalance: "7500.00",
     transactions: [
       {
         amount: "$4.45",
