@@ -9,8 +9,12 @@ function LIHPHeader() {
             history.push('/')
         }
     }
-
+    
     const signOut = useSignOut()
+
+    function refreshPage() {
+        window.location.reload(false);
+      }
 
     return (
       <div className="Header-Main-Box">
@@ -18,8 +22,9 @@ function LIHPHeader() {
               <p>NorthArk Investment Bank 💵</p> 
               <p className="User-Name-Text">Welcome to your account UserName!</p>
           </div>
-          <div className="Sign-Out-Button-Box">
+          <div className="Sign-Out-Ref-Button-Box">
               <button className="Sign-Out-Button" onClick={signOut}>Sign Out</button>
+              <button className="Refresh-Button" onClick={refreshPage}>Refresh</button>
           </div>
       </div>
     );

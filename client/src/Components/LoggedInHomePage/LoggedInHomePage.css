@@ -10,7 +10,7 @@
 }
 
 .Title-Box {
-    margin-right: 65%;
+    margin-right: 62%;
     margin-left: 1%;
     font-size: 30px;
     font-weight: bold;
@@ -27,11 +27,13 @@
     color: black;
 }
 
-.Sign-Out-Button-Box {
+.Sign-Out-Ref-Button-Box {
     margin-top: 3%;
 }
 
 .Sign-Out-Button {
+    width: 70%;
+    margin-bottom: 1%;
     font-size: 15px;
     border-radius: 10px;
     /* background-color: #854901; */
@@ -39,14 +41,23 @@
     color: white;
 }
 
+.Refresh-Button {
+  width: 70%;
+  font-size: 15px;
+  border-radius: 10px;
+  /* background-color: #854901; */
+  background-color: black;
+  color: white;
+}
+
 /* Styling for LIHPReportsBox.js */
 .Reports-Box-Main-Box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 1%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center;  */
+    margin-top: 2.6%;
     margin-bottom: 1%;
-    width: 100%;
+    width: 30%;
     /* border: solid black 1px; */
 }
 
@@ -63,6 +74,34 @@
     border-radius: 10px;
     background-color: #854901;
     color: white;
+}
+
+.Rep-CuBala-Joint-Box {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for CurrentBalance.js */
+.Current-Bala-Main-Box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  width: 20%;
+  box-shadow: #383232 0 2px 2px;
+  text-align: left;
+  /* border: solid black 1px; */
+}
+
+.Current-Bala-Title-Box {
+  background-color: #a3a3a3;
+}
+
+.Current-Bala-Title {
+  margin-left: 2%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Styling for TransactionsLog.js */
