@@ -1,11 +1,14 @@
 import plus from '../../Assets/SvgIcons/plus.svg'
 import dash from '../../Assets/SvgIcons/dash.svg'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { UserContext } from '../UserContext/UserContext';
+
 
 
 export default function TransactionList(props){
     const currency = new Intl.NumberFormat('en-US' , {style: 'currency', currency: 'usd'})
-    const [index, setIndex] = useState();
+    const [index, setIndex] = useState()
+    const [user, setUser] = useContext(UserContext) //user context for proper data
     //generated date
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
@@ -52,6 +55,8 @@ export default function TransactionList(props){
         AccountNum: 'xxxx-xxxx-xxxx-3456',
         Amount: 112.34
         }]
+
+       
     
     const expense = props.expense
     //map dummy data

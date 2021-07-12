@@ -13,7 +13,7 @@ export default function Revenue(){
 
     const [isOpen,setIsOpen] = useState(false)
     
-    //place holder variables
+    //place holder variables total amount context can be used here now using UserContext
     const [yearlyIncome, setYearlyIncome] = useState(75000)
     const [monthlyIncome, setMonthlyIncome] = useState(yearlyIncome/12)
     const [quarterlyIncome, setQuarterlyIncome] = useState(yearlyIncome/4)
@@ -22,6 +22,10 @@ export default function Revenue(){
     
     return(
         <div className='Revenue-container'>
+            <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                <Link style={{display:'contents', textDecoration: 'none'}} to='/expense-report'><button className="Reports-Box-Button">Expense Report</button></Link>
+                <button className="Reports-Box-Button">Projection Report</button>
+            </div>
             <div className='Rev-Home-Route'>
                 <Link  to='/home'><span><img src={home} alt='home'/></span>Home</Link>
             </div>
