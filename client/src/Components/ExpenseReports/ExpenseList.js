@@ -3,7 +3,7 @@ import RevenueData from '../RevenueReport/RevenueData'
 import listIcon from '../../Assets/SvgIcons/listIcon.svg'
 import graphIcon from '../../Assets/SvgIcons/graphIcon.svg'
 import barIcon from '../../Assets/SvgIcons/barIcon.svg'
-
+import ExpensePrint from '../PrintPages/ExpensePrint'
 
 export default function ExpenseLists(){
     const [rDataState, setRDataState] = useState(0);
@@ -14,7 +14,8 @@ export default function ExpenseLists(){
                 <img className={rDataState === 0 ? 'sidebar-active': null} onClick={()=>setRDataState(0)} src={listIcon} alt='ListIcon'/>
                 <img className={rDataState === 1 ? 'sidebar-active': null} onClick={()=>setRDataState(1)} src={graphIcon} alt='GraphIcon'/>
                 <img className={rDataState === 2 ? 'sidebar-active': null} onClick={()=>setRDataState(2)} src={barIcon} alt='BarIcon'/>
-                <button className='Rev-sidebar-print'><b>PRINT PDF</b></button>
+                <ExpensePrint/>
+                
             </div>
 
             <div className='Rev-data-container'>
