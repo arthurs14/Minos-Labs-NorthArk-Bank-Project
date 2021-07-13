@@ -3,8 +3,10 @@ import { useUser } from '../UserContext/UserContext';
 import './LoggedInHomePage.css'
 
 function LIHPHeader() {
-    const { logout } = useUser();
+    const { user, logout } = useUser();
+    const { name } = user.authData.result
     const history = useHistory();
+
 
     const signOut = () => {
         logout(history);
@@ -18,7 +20,7 @@ function LIHPHeader() {
       <div className="Header-Main-Box">
           <div className="Title-Box">
               <p>NorthArk Investment Bank 💵</p> 
-              <p className="User-Name-Text">Welcome to your account UserName!</p>
+              <p className="User-Name-Text">Welcome {name}</p>
           </div>
           <div className="Sign-Out-Ref-Button-Box">
               <button className="Sign-Out-Button" onClick={signOut}>Sign Out</button>
