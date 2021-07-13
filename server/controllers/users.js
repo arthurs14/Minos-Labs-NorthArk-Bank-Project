@@ -51,7 +51,6 @@ export const signin = async (req, res) => {
 };
 
 export const signup = async (req, res) => {
-  console.log('did we enter here?');
   // get form data to create a user
   const { email, password, confirmPassword, firstName, lastName } = req.body;
 
