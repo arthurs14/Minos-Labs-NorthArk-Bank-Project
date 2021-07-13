@@ -29,7 +29,7 @@ const UserLogin = () => {
           Forgot <Link to='/'>password</Link>
       </div>
       <div className="new user text-right">
-          New User <Link onClick={() => console.log('clicked')} to="/sign-up">sign-up</Link>
+          New User <Link onClick={() => console.log('clicked')} to="/signup">Sign Up</Link>
       </div>
     </form>
   );
