@@ -8,7 +8,6 @@ import {
 import "./App.css";
 
 import Login from "./Components/Login/Login";
-import SignUp from "./Components/Login/SignUp";
 import LoggedInHomePage from "./Components/LoggedInHomePage/LoggedInHomePage";
 import RevenueMain from "./Components/RevenueReport/RevenueMain";
 import ExpenseMain from "./Components/ExpenseReports/ExpenseMain";
@@ -21,7 +20,6 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/" component={Login} />
-            <Route path="/signup" component={SignUp} />
             <Route path="/home" component={LoggedInHomePage} />
             <Route path="/revenue-report" component={RevenueMain} />
             <Route path="/expense-report" component={ExpenseMain} />
