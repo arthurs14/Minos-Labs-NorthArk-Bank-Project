@@ -73,7 +73,7 @@ const UserProvider = (props) => {
 
             history.push('/home');
         } catch (err) {
-            console.log(err);
+            console.log(err.message);
         }
     };
 
