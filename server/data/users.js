@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from 'uuid'
 
 const users = [
   {
-    id: uuidv4(),
+    id: "1",
     user: "testuser1",
     password: "123456",
-    currentBalance: "5000.00",
+    currentBalance: "$5000.00",
     transactions: [
       {
         amount: "$3.13",
@@ -100,10 +100,10 @@ const users = [
     ]
   },
   {
-    id: uuidv4(),
+    id: "2",
     user: 'testuser2',
     password: "135791",
-    currentBalance: "7500.00",
+    currentBalance: "$7500.00",
     transactions: [
       {
         amount: "$4.45",
