@@ -1,16 +1,14 @@
 import { useHistory } from 'react-router-dom';
+import { useUser } from '../UserContext/UserContext';
 import './LoggedInHomePage.css'
 
 function LIHPHeader() {
+    const { logout } = useUser();
+    const history = useHistory();
 
-    const useSignOut = () => {
-        let history = useHistory()
-        return () => {
-            history.push('/')
-        }
-    }
-    
-    const signOut = useSignOut()
+    const signOut = () => {
+        logout(history);
+    };
 
     function refreshPage() {
         window.location.reload(false);

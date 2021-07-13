@@ -16,6 +16,7 @@ const userSchema = mongoose.Schema({
   id: {
     type: String
   },
+  transactions: [],
 });
 
 export default mongoose.model("User", userSchema);
