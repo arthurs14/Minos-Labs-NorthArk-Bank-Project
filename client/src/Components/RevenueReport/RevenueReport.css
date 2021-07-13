@@ -103,9 +103,7 @@
     opacity: .95;
     overflow: hidden;
 }
-.panel-active:hover{
-    cursor: pointer;
-}
+
 .Rev-content-panel-container{
 display: flex;
 }

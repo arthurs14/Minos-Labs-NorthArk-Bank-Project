@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+  
 const UserLogin = () => {
   return (
     <form className="login-form">
@@ -24,7 +24,7 @@ const UserLogin = () => {
           </div>
       </div>
 
-      <button type="submit" className="btn btn-primary btn-block">Submit</button>
+      <Link to='/home'><button type="submit" className="btn btn-primary btn-block">Submit</button></Link>
       <div className="forgot password text-right">
           Forgot <Link to='/'>password</Link>
       </div>

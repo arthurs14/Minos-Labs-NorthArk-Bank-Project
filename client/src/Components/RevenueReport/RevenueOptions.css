@@ -1,6 +1,16 @@
 .Rev-options-container{
     width: 60%;
 }
-.Rev-options-container h3{
-    
+.Date-Picker-style{
+width: 200px;
 }
+
+
+/* ::-webkit-datetime-edit
+::-webkit-datetime-edit-fields-wrapper
+::-webkit-datetime-edit-text
+::-webkit-datetime-edit-month-field
+::-webkit-datetime-edit-day-field
+::-webkit-datetime-edit-year-field
+::-webkit-inner-spin-button
+::-webkit-calendar-picker-indicator */

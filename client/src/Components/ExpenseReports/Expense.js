@@ -5,13 +5,14 @@ import home from '../../Assets/SvgIcons/home.svg'
 import leftArrow from '../../Assets/SvgIcons/LeftArrow.svg'
 import rightArrow from '../../Assets/SvgIcons/RightArrow.svg'
 import { useState } from 'react'
+import RevenueOptions from '../RevenueReport/RevenueOptions'
 
 
 export default function Expense(){
 
     const [isOpen,setIsOpen] = useState(false)
     
-    //place holder variables
+    //place holder variables total amount context can be used here now using UserContext
     const [yearlyIncome, setYearlyIncome] = useState(32420)
     const [monthlyIncome, setMonthlyIncome] = useState(yearlyIncome/12)
     const [quarterlyIncome, setQuarterlyIncome] = useState(yearlyIncome/4)
@@ -20,8 +21,13 @@ export default function Expense(){
     
     return(
         <div className='Revenue-container'>
+             <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                <Link style={{display:'contents', textDecoration: 'none'}} to='/revenue-report'><button className="Reports-Box-Button">Revenue Report</button></Link>
+                <button className="Reports-Box-Button">Projection Report</button>
+            </div>
             <div className='Rev-Home-Route'>
                 <Link  to='/home'><span><img src={home} alt='home'/></span>Home</Link>
+
             </div>
                         <div className='Revenue-top-prev'>
                             <ExpensePrev week={weeklyIncome}/>
@@ -44,7 +50,7 @@ export default function Expense(){
                             
                             <div className='panel-view-options'>
                                 <h2>View Options</h2>
-                                {/* <RevenueOptions/> */}
+                                <RevenueOptions/>
                             </div>
 
 
