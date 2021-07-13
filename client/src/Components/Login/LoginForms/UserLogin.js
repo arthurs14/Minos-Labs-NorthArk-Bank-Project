@@ -9,22 +9,40 @@ const UserLogin = () => {
 
       <div className="form-group">
           <label>Email Address</label>
-          <input type="email" className="form-control" placeholder="Enter Email" />
+          <input 
+            type="email" 
+            className="form-control" 
+            placeholder="Enter Email" 
+          />
       </div>
 
       <div className="form-group">
           <label>Password</label>
-          <input type="password" className="form-control" placeholder="Enter Passsword" />
+          <input 
+            type="password"
+            className="form-control" 
+            placeholder="Enter Passsword" 
+          />
       </div>
 
       <div className="form-group">
           <div className="custom-control custom-checkbox">
-              <input type="checkbox" className="custom-control-input" id="customCheck1" />
-              <label className="custom-control-label" htmlFor="customCheck1">Remember Me</label>
+              <input 
+                type="checkbox" 
+                className="custom-control-input" 
+                id="customCheck1" 
+              />
+              <label 
+                className="custom-control-label" 
+                htmlFor="customCheck1">Remember Me</label>
           </div>
       </div>
 
-      <Link to='/home'><button type="submit" className="btn btn-primary btn-block">Submit</button></Link>
+      <Link to='/home'>
+        <button 
+          type="submit" 
+          className="btn btn-primary btn-block">Submit</button>
+      </Link>
       <div className="forgot password text-right">
           Forgot <Link to='/'>password</Link>
       </div>

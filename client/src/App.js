@@ -12,7 +12,7 @@ import SignUp from "./Components/Login/SignUp";
 import LoggedInHomePage from "./Components/LoggedInHomePage/LoggedInHomePage";
 import RevenueMain from "./Components/RevenueReport/RevenueMain";
 import ExpenseMain from "./Components/ExpenseReports/ExpenseMain";
-import { UserProvider } from "./Components/UserContext/UserContext";
+import UserProvider from "./Components/UserContext/UserContext";
 
 function App() {
   return (

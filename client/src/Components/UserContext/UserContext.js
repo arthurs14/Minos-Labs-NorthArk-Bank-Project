@@ -1,15 +1,15 @@
-import React , { useEffect, useState } from "react";
+import { 
+    useEffect, 
+    useState, 
+    createContext, 
+    useContext 
+} from "react";
 import axios from 'axios'
 
-export const UserContext = React.createContext();
+const UserContext = createContext();
+export const useUser = () => useContext(UserContext)
 
-
-
-    
-
-    
-
-export const UserProvider = (props) =>{
+const UserProvider = (props) =>{
     
     const [user, setUser] = useState([]);
 
@@ -23,12 +23,16 @@ export const UserProvider = (props) =>{
          })
     }, [] )
     
+    const value = {
+        user,
+        setUser,
+    };
 
-    
     return(
-        <UserContext.Provider value={[user, setUser]}>
+        <UserContext.Provider value={value}>
             {props.children}
         </UserContext.Provider>
     )
+};
 
-}
+export default UserProvider;
