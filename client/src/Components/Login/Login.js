@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { useHistory } from 'react-router-dom';
+import { useUser } from '../UserContext/UserContext';
 import './Login.css';
+
 
 const initialState = {
   firstName: '',
@@ -12,6 +15,8 @@ const initialState = {
 const Login = () => {
     const [isSignup, setIsSignup] = useState(false);
     const [formData, setFormData] = useState(initialState);
+    const { login, signup } = useUser();
+    const history = useHistory();
 
     const handleChange = (e) => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,6 +24,14 @@ const Login = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
+
+      // depending on sign in or sign up
+      if (isSignup) {
+        signup(formData, history);
+      } else {
+        login(formData, history);
+      }
+      setFormData(initialState);
     };
 
     const switchMode = () => {
